@@ -1,0 +1,9 @@
+.error-center {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.error-center svg {
+  color: var(--danger-color);
+}

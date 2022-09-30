@@ -1,0 +1,71 @@
+.navbar-container svg {
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  height: 60px;
+  width: 64px;
+  background-color: var(--header-color);
+  z-index: 2;
+}
+
+.navbar-button {
+  padding: 8px;
+  margin: -2px 0 0 6px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--header-color);
+}
+
+.navbar-button:hover {
+  background-color: var(--hover-light-color);
+  color: var(--text-color);
+}
+
+.navbar-menu {
+  display: block;
+  justify-content: center;
+  position: fixed;
+  width: 64px;
+  height: 100%;
+  top: 0;
+  margin-top: 60px;
+  font-size: 0px;
+  transition: width 450ms;
+  background-color: var(--content-color);
+  z-index: 2;
+}
+
+.navbar-menu.expanded {
+  left: 0;
+  width: 240px;
+  font-size: 18px;
+  transition: width 700ms, font-size 700ms;
+}
+
+.navbar-menu-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  padding: 0;
+}
+
+.navbar-menu-content a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+}
+
+.navbar-menu-content a:hover {
+  color: var(--text-color);
+  background-color: var(--hover-color);
+}

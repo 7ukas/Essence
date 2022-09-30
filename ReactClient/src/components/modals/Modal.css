@@ -1,0 +1,233 @@
+.form-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--form-bg-color);
+  z-index: 3;
+}
+
+.form-login {
+  width: 305px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 7px var(--form-bg-color);
+}
+
+.form-register {
+  width: 480px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 7px var(--form-bg-color);
+}
+
+.form-playlist {
+  width: 370px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 7px var(--form-bg-color);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(144, 238, 145);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+.form-header {
+  height: 90px;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 20px;
+  background-color: var(--header-color);
+  border-radius: 5px 5px 0 0;
+}
+
+.form-header-playlist {
+  height: 60px;
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+.form-header-login {
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+.form-header-register {
+  font-weight: 400;
+  color: var(--text-color);
+  margin-top: 2px;
+}
+
+.login-header {
+  height: 62px;
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+.form-footer-playlist {
+  height: 44px;
+  width: 100%;
+  padding: 8px 0 8px 15px;
+  background-color: var(--header-color);
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.form-footer-playlist-settings {
+  height: 44px;
+  width: 100%;
+  padding: 8px 0 8px 15px;
+  background-color: var(--header-color);
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.form-footer-playlist-content {
+  padding: 0px 20px 15px 20px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px 0 0 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-footer-playlist-content svg {
+  color: var(--hover-color);
+}
+
+.form-close-button {
+  float: right;
+  margin-right: 15px;
+  background-color: var(--danger-color);
+  border-radius: 5px;
+  border: none;
+}
+
+.form-close-button:hover {
+  background-color: var(--hover-danger-color);
+}
+
+.form-checkbox-label {
+  width: 86%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form-checkbox-label svg {
+  float: right;
+  color: var(--hover-color);
+}
+
+.form-content-container {
+  padding: 0 20px 20px 20px;
+}
+
+.form-content-container a {
+  color: var(--text-color);
+}
+
+.form-playlists-container {
+  height: 310px;
+  max-height: 500px;
+  overflow-y: scroll;
+  padding: 8px 20px 10px 20px;
+}
+
+.form-playlists-not-found {
+  width: 100%;
+  margin-top: 30%;
+  text-align: center;
+}
+
+.form-playlists-not-found svg {
+  color: var(--hover-color);
+  margin-bottom: 15px;
+}
+
+.form-login-container {
+  padding: 25px 40px 30px 40px;
+  text-align: center;
+}
+
+.form-login-container svg {
+  color: rgb(95,225,124);
+  margin-bottom: 15px;
+}
+
+.form-login-container button {
+  margin-top: 20px;
+}
+
+.form-login-container a {
+  color: var(--text-color);
+}
+
+.form-error-message {
+  height: 44px;
+  width: 100%;
+  padding: 9px 0;
+  text-align: center;
+  color: var(--text-color);
+  background-color: rgb(255, 79, 79);
+  border-radius: 8px;
+}
+
+.form-submit-button {
+  width: 100%;
+  background-color: var(--content-color);
+}
+
+.form-submit-button.pre-submit {
+  background-color: rgb(140,140,140);
+  border: none;
+}
+
+.form-submit-button.pre-submit:hover {
+  background-color: rgb(130,130,130);
+}
+
+.form-submit-button.pre-submit:focus,
+.form-submit-button.delete:focus {
+  outline: none !important;
+  outline-offset: none !important;
+  box-shadow: none !important;
+}
+
+.form-submit-button.delete {
+  background-color: var(--danger-color);
+  border: none;
+}
+
+.form-submit-button.delete:hover {
+  background-color: var(--hover-danger-color);
+}
+
+.form-forgot {
+  text-align: center;
+}
+
+.form-forgot a {
+  color: var(--content-color);
+}
+
+.form-forgot a:hover {
+  color: rgb(0, 0, 0);
+}

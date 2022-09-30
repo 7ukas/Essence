@@ -1,0 +1,252 @@
+.header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 60px;
+  width: calc(100% - 60px);
+  margin-left: 60px;
+  padding: 0 15px 0 5px;
+  color: var(--text-color);
+  background-color: var(--header-color);
+  z-index: 2;
+}
+
+.header svg {
+  color: white;
+}
+
+.header-search-bar {
+  max-width: 400px;
+  border: none;
+  margin-right: 15px;
+}
+
+.header-search-bar input {
+  background-color: white;
+  font-size: 18px;
+  padding-left: 5px;
+  height: 32px;
+  width: 207px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  transition: width 350ms;
+}
+
+.header-search-bar input:focus,
+.header-search-bar input:enabled {
+  outline: none;
+  width: 347px;
+}
+
+.header-search-bar .search-inputs {
+  width: 235px;
+  border: none;
+  transition: width 700ms;
+}
+
+.header-search-bar .search-inputs:hover,
+.header-search-bar .search-inputs:focus-within {
+  display: flex;
+  width: 375px;
+}
+
+.header-search-bar .search-icon {
+  border-radius: 0 3px 3px 0;
+  padding-right: 3px;
+}
+
+.header-search-bar .search-icon svg {
+  color: black;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0 10px 5px 0;
+}
+
+.title:hover {
+  color: var(--text-color);
+}
+
+/* SEARCH */
+.search-menu-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(13, 95, 253);
+  border-bottom: 1px solid var(--header-color);
+}
+
+.search-menu-header a {
+  height: 40px;
+  width: 25%;
+  padding: 8px 15px 8px 15px;
+  text-align: center;
+  color: white;
+}
+
+.search-menu-header a:hover {
+  background-color: var(--content-color);
+}
+
+.search-menu {
+  display: none;
+  visibility: hidden;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 338px;
+  overflow-y: hidden;
+  margin-top: 61px;
+  margin-left: 65px;
+  font-size: 16px;
+}
+
+.search-menu ul {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--header-color);
+}
+
+.search-menu.active {
+  display: block;
+  visibility: visible;
+}
+
+.search-menu-content {
+  display: block;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  height: 42px;
+  padding: 0;
+}
+
+.search-menu-content a {
+  padding-left: 8px;
+  text-decoration: none;
+  background-color: rgba(13, 123, 253, .9);
+  color: var(--text-color);
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-menu-content a:hover {
+  color: var(--text-color);
+  background-color: var(--content-color);
+  box-shadow: inset 5px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* PROFILE */
+.profile-picture {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile-menu {
+  display: none;
+  visibility: hidden;
+  justify-content: center;
+  position: fixed;
+  margin-top: 61px;
+  margin-right: 1px;
+  width: 176px;
+  height: 0px;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+}
+
+.profile-menu ul {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--header-color);
+}
+
+.profile-menu.active {
+  display: block;
+  visibility: visible;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: auto;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.login-button:hover {
+  color: var(--text-color);
+}
+
+.login-button svg {
+  margin-left: 8px;
+}
+
+.profile-menu-button {
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 4px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.profile-menu-button:hover {
+  background-color: var(--hover-light-color);
+  color: var(--text-color);
+}
+
+.profile-menu-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  height: 42px;
+  padding: 0;
+}
+
+.profile-menu-content a {
+  padding-left: 8px;
+  text-decoration: none;
+  background-color: rgba(13, 123, 253, .9);
+  color: var(--text-color);
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.profile-menu-content a:hover {
+  color: var(--text-color);
+  background-color: var(--content-color);
+  box-shadow: inset 5px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.profile-menu-seperator {
+  display: flex;
+  height: 1px;
+}
+
+.profile-menu-seperator a {
+  width: 100%;
+  height: 100%;
+  background-color: var(--content-color);
+  border-bottom: solid 1px var(--header-color);
+}

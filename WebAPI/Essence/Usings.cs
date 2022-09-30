@@ -1,0 +1,16 @@
+﻿global using System;
+global using System.Text;
+global using System.Collections.Generic;
+global using System.ComponentModel.DataAnnotations;
+global using System.IdentityModel.Tokens.Jwt;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Rendering;
+global using AutoMapper;
+global using AutoMapper.QueryableExtensions;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using Newtonsoft.Json;
+global using Serilog;
+global using System.Text.RegularExpressions;
+global using BCrypt;
+global using Microsoft.IdentityModel.Tokens;

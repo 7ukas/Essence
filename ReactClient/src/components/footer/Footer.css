@@ -1,0 +1,32 @@
+.footer {
+  display: block;
+  flex-shrink: 0;
+  height: 135px;
+  margin-left: -51px;
+  padding: 10px 0 0 15px;
+  background-color: var(--header-color);
+  color: var(--text-color);
+  z-index: 2;
+}
+
+.footer-title {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.footer-description {
+  font-weight: 300;
+}
+
+.footer hr {
+  margin: 10px 30px 10px 0;
+}
+
+.footer a {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.footer svg {
+  margin-bottom: 0.3rem;
+}
