@@ -8,14 +8,14 @@ Link: https://mango-coast-07cce5a03.2.azurestaticapps.net/
 ## About
 "Essence" is a primitive full-stack website that enables users to "like" any of the given music content.
 There are around 3200 tracks and 300 albums to choose from. Every track is connected to an album and 
-every album is connected to it's artist therefore content pages are auto-generated and it is possible to check the data content contains
-To like (add/save) them, you must create a new account. With that also comes ability to create your own playlist and view playlists 
+every album is connected to it's artist. For tracks, albums, artists and playlists pages are auto-generated with the certain thing provides.
+To add/remove them, you must create a new account. With that also comes ability to create your own playlist and view playlists 
 made by other users (as long as they are set to be public).
 
 ## Project
-Project was built with a purpose to learn on how to work with React and build all required parts to get a fully functional website.
+Project was built purely with a purpose to learn on how to work with React, CSS and, in general, how to build all required parts to get a working functional website.
 
-### Parts
+### Structure
 * **Front-end:** React
 * **Back-end:** .NET
 * **Database:** SQL Server
